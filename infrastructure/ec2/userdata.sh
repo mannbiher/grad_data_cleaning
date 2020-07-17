@@ -1,6 +1,6 @@
 #!/bin/bash
-apt update && apt upgrade -y
-apt install openjdk-11-jre -y
+apt-get update && apt-get upgrade -y
+apt-get install openjdk-11-jre -y
 curl -o /home/ubuntu/openrefine-linux-3.4-beta2.tar.gz -L https://github.com/OpenRefine/OpenRefine/releases/download/3.4-beta2/openrefine-linux-3.4-beta2.tar.gz
 cd /home/ubuntu/
 tar zxvf openrefine-linux-3.4-beta2.tar.gz
