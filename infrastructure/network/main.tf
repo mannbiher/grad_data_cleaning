@@ -15,14 +15,6 @@ resource "aws_security_group" "openrefine" {
     cidr_blocks = [var.my_ip]
   }
 
-  ingress {
-    description = "OpenRefine http"
-    from_port   = 3333
-    to_port     = 3333
-    protocol    = "tcp"
-    cidr_blocks = [var.my_ip]
-  }
-
   egress {
     from_port   = 0
     to_port     = 0
